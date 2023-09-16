@@ -14,7 +14,7 @@ export function Hero({
     stepHTML = steps.map((step: any, index: number) => (
       <p
         key={index}
-        className="flex items-center text-base font-medium text-gray-900"
+        className="flex items-center justify-center text-base font-medium text-gray-900"
       >
         {step.icon}
         {step.text}
@@ -40,10 +40,7 @@ export function Hero({
         </p>
       ) : null}
       {stepHTML ? (
-        <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:text-center items-center">
-          {/* <div className="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left"></div> */}
-          {stepHTML}
-        </div>
+        <div className="mx-auto mt-8 max-w-lg text-center ">{stepHTML}</div>
       ) : (
         ''
       )}
