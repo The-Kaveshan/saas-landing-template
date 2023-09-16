@@ -71,7 +71,7 @@ function buildTextBlock(textData: {
 
 export function Feature({ textPosition = 'left', textData = {}, styles='' }) {
   const imgBlock = (
-    <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
+    <div className="relative mt-1 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
       <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
         <button
           type="button"
@@ -89,8 +89,8 @@ export function Feature({ textPosition = 'left', textData = {}, styles='' }) {
 
   return (
     <div className="relative overflow-hidden bg-white">
-      <div className={`relative pb-10 pt-1 sm:pb-10 lg:pb-10 ${styles}`}>
-        <main className="mx-auto mt-16 max-w-7xl px-4 px-6 sm:mt-24 lg:mt-32">
+      <div className={`relative pb-10 pt-10 ${styles}`}>
+        <main className="mx-auto mt-0 max-w-7xl px-4 px-6">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             {textPosition === 'left' ? (
               <>
