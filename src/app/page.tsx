@@ -1,16 +1,10 @@
 import Banner from '@/components/Banner'
-import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { HeroImage } from '@/components/HeroImage'
 import { HeroCompanies } from '@/components/HeroCompanies'
 import { Feature } from '@/components/Feature'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { HeroExpanded } from '@/components/HeroExpanded'
 
@@ -110,12 +104,6 @@ export default function Home() {
         <Feature textPosition="left" textData={textFeatureData5} />
         <Feature textPosition="right" textData={textFeatureData6} />
         <HeroExpanded />
-        {/* <PrimaryFeatures /> */}
-        {/* <SecondaryFeatures /> */}
-        {/* <CallToAction />
-        <Testimonials />
-        <Pricing />
-        <Faqs /> */}
       </main>
       <Footer />
     </>
