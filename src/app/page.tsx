@@ -12,6 +12,8 @@ import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 import { XMarkIcon } from '@heroicons/react/20/solid'
+import { HeroExpanded } from '@/components/HeroExpanded'
+
 
 const textFeatureData1 = {
   title: 'Critique Their Current Way of Doing Things',
@@ -97,7 +99,7 @@ export default function Home() {
         />
         <Feature textPosition="right" textData={textFeatureData1} />
         <Feature textPosition="left" textData={textFeatureData2} />
-        <Feature textPosition="right" styles={`bg-slate-100 border-solid border-2 border-slate-400`} textData={textFeatureData3} />
+        <Feature textPosition="right" styles={`bg-slate-50 border-solid border-2 border-slate-400`} textData={textFeatureData3} />
         <Hero
           title="This Is How Your Product Can Fix All Of The Problems"
           headline="We don't want to explain the entire product because that overwhelms people and raises unnecessary objections. Instead, show them how they can use your product to get the result they want (this is all they care about anyway)"
@@ -107,6 +109,7 @@ export default function Home() {
         <Feature textPosition="right" textData={textFeatureData4} />
         <Feature textPosition="left" textData={textFeatureData5} />
         <Feature textPosition="right" textData={textFeatureData6} />
+        <HeroExpanded />
         {/* <PrimaryFeatures /> */}
         {/* <SecondaryFeatures /> */}
         {/* <CallToAction />
