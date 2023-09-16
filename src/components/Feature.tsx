@@ -1,3 +1,4 @@
+import { Button } from '@/components/Button'
 interface Reason {
   icon: React.ReactNode // You can use a more specific type if needed
   text: string
@@ -13,8 +14,10 @@ function buildTextBlock(textData: {
   subtitle?: '' | undefined,
   reasons?: [] | undefined,
   headline?: '' | undefined,
+  buttonText?: '' | undefined,
+  styles?: '' | undefined
 }) {
-  const { step='', title = '', subtitle = '', reasons = [], headline = '' } = textData
+  const { step='', title = '', subtitle = '', reasons = [], headline = '', buttonText ='', styles='' } = textData
   let reasonHTML = null
 
   if (reasons) {
@@ -30,7 +33,7 @@ function buildTextBlock(textData: {
   }
 
   const textBlock = (
-    <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
+    <div className={`sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left ${styles}`}>
       {step ? (
         <p className="flex items-center text-base font-medium text-red-600">
           {step}
@@ -54,6 +57,12 @@ function buildTextBlock(textData: {
           {subtitle}
         </p>
       ) : null}
+      {buttonText ? (
+        <div className="mt-10 flex justify-center gap-x-6">
+        <Button color="blue">{buttonText}</Button>
+      </div>
+      ) : null}
+
     </div>
   )
 

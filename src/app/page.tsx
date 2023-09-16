@@ -7,6 +7,7 @@ import { HeroCompanies } from '@/components/HeroCompanies'
 import { Feature } from '@/components/Feature'
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { HeroExpanded } from '@/components/HeroExpanded'
+import { HeroCompaniesExpanded } from '@/components/HeroCompaniesExpanded'
 
 
 const textFeatureData1 = {
@@ -71,6 +72,12 @@ const textFeatureData6 = {
   headline: `What’s the cost of not fixing their problem or getting the result they want?`,
 }
 
+const textFeatureData7 = {
+  title: 'Provide An Alternative CTA For The Skepticals…',
+  headline: `There’s a chance that even if your messaging is perfect some people will hesitate and that’s what this lower commitment cta is for. Demos, videos, webinars, lead magnets, phone numbers are some of the alternatives you can use.`,
+  buttonText: 'Explain the Alternative Here'
+}
+
 export default function Home() {
   return (
     <>
@@ -104,8 +111,9 @@ export default function Home() {
         <Feature textPosition="left" textData={textFeatureData5} />
         <Feature textPosition="right" textData={textFeatureData6} />
         <HeroExpanded />
+        <HeroCompaniesExpanded />
+        <Feature textPosition="left" textData={textFeatureData7} styles={`bg-slate-50 border-solid border-2 border-slate-400`}/>
       </main>
-      <Footer />
     </>
   )
 }
