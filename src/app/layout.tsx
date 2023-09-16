@@ -6,11 +6,11 @@ import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'Salient Template',
+    template: 'SaaS Landing',
+    default: 'SaaS Landing',
   },
   description:
-    'Template site',
+    'Template Cheatsheet',
 }
 
 const inter = Inter({
