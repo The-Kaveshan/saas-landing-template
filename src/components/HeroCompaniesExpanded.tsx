@@ -33,7 +33,7 @@ export function HeroCompaniesExpanded() {
 
 
   return (
-    <Container className="pb-16 pt-5 text-center lg:pt-5">
+    <Container className="pb-5 pt-5 text-center lg:pt-5">
       <div className="mt-10 lg:mt-12">
         <ul
           role="list"

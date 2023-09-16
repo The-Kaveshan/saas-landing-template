@@ -10,7 +10,7 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function HeroCompanies() {
   return (
-    <Container className="pb-16 pt-5 text-center lg:pt-5">
+    <Container className="pb-10 pt-10 text-center">
       <div className="mt-10 lg:mt-12">
         <p className="font-display text-base text-slate-900">
           Say that these credible companies are using your product to get the

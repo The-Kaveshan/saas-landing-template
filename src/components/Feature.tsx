@@ -40,7 +40,7 @@ function buildTextBlock(textData: {
         </p>
       ) : null}
       <h1>
-        <span className="text-4lg xl:text-6lg mt-1 block font-bold tracking-tight sm:text-5xl">
+        <span className="mt-1 block font-bold tracking-tight  text-2xl ">
           <span className="block text-gray-900">{title}</span>
         </span>
       </h1>
