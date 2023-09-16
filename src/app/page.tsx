@@ -57,6 +57,24 @@ const textFeatureData3 = {
   subtitle: `Quantify this as much as possible!`
 }
 
+const textFeatureData4 = {
+  step: 'Step 1',
+  title: 'Explain How They Can Get The Result (In Order) ',
+  headline: `What’s the cost of not fixing their problem or getting the result they want?`,
+}
+
+const textFeatureData5 = {
+  step: 'Step 2',
+  title: 'Explain How They Can Get The Result (In Order) ',
+  headline: `What’s the cost of not fixing their problem or getting the result they want?`,
+}
+
+const textFeatureData6 = {
+  step: 'Step 3',
+  title: 'Explain How They Can Get The Result (In Order) ',
+  headline: `What’s the cost of not fixing their problem or getting the result they want?`,
+}
+
 export default function Home() {
   return (
     <>
@@ -82,16 +100,19 @@ export default function Home() {
         <Feature textPosition="right" styles={`bg-slate-100 border-solid border-2 border-slate-400`} textData={textFeatureData3} />
         <Hero
           title="This Is How Your Product Can Fix All Of The Problems"
-          headline="We don’t want to explain the entire product because that overwhelms people and raises unnecessary objections. Instead, show them how they can use your product to get the result they want (this is all they care about anyway)"
+          headline="We don't want to explain the entire product because that overwhelms people and raises unnecessary objections. Instead, show them how they can use your product to get the result they want (this is all they care about anyway)"
           subtitle="Only explain how they can get the result in 3-5 steps (or in a short period of time)"
           buttonText="Explain Your CTA here"
         />
+        <Feature textPosition="right" textData={textFeatureData4} />
+        <Feature textPosition="left" textData={textFeatureData5} />
+        <Feature textPosition="right" textData={textFeatureData6} />
         {/* <PrimaryFeatures /> */}
         {/* <SecondaryFeatures /> */}
-        <CallToAction />
+        {/* <CallToAction />
         <Testimonials />
         <Pricing />
-        <Faqs />
+        <Faqs /> */}
       </main>
       <Footer />
     </>

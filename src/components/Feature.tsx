@@ -8,12 +8,13 @@ interface Props {
 }
 
 function buildTextBlock(textData: {
-  title?: '' | undefined
-  subtitle?: '' | undefined
-  reasons?: [] | undefined
-  headline?: '' | undefined
+  step?: '' | undefined,
+  title?: '' | undefined,
+  subtitle?: '' | undefined,
+  reasons?: [] | undefined,
+  headline?: '' | undefined,
 }) {
-  const { title = '', subtitle = '', reasons = [], headline = '' } = textData
+  const { step='', title = '', subtitle = '', reasons = [], headline = '' } = textData
   let reasonHTML = null
 
   if (reasons) {
@@ -30,6 +31,11 @@ function buildTextBlock(textData: {
 
   const textBlock = (
     <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
+      {step ? (
+        <p className="flex items-center text-base font-medium text-red-600">
+          {step}
+        </p>
+      ) : null}
       <h1>
         <span className="text-4lg xl:text-6lg mt-1 block font-bold tracking-tight sm:text-5xl">
           <span className="block text-gray-900">{title}</span>
