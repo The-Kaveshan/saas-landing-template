@@ -40,7 +40,7 @@ function buildTextBlock(textData: {
         </p>
       ) : null}
       <h1>
-        <span className="mt-1 block font-bold tracking-tight  text-2xl ">
+        <span className="mt-8 block font-bold tracking-tight  text-2xl ">
           <span className="block text-gray-900">{title}</span>
         </span>
       </h1>
@@ -58,7 +58,7 @@ function buildTextBlock(textData: {
         </p>
       ) : null}
       {buttonText ? (
-        <div className="mt-10 flex justify-center gap-x-6">
+        <div className="mt-10 mb-10 flex justify-center gap-x-6">
         <Button color="blue">{buttonText}</Button>
       </div>
       ) : null}
@@ -89,7 +89,7 @@ export function Feature({ textPosition = 'left', textData = {}, styles='' }) {
 
   return (
     <div className="relative overflow-hidden bg-white">
-      <div className={`relative pb-10 pt-10 ${styles}`}>
+      <div className={`relative pb-10 ${styles}`}>
         <main className="mx-auto mt-0 max-w-7xl px-4 px-6">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             {textPosition === 'left' ? (

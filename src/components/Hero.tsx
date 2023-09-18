@@ -23,7 +23,7 @@ export function Hero({
   }
 
   return (
-    <Container className={`pb-16 pt-5 text-center lg:pt-5 ${styles}`}>
+    <Container className={`pb-5 pt-5 text-center lg:pt-5 ${styles}`}>
       {title ? (
         <h1 className="mx-auto max-w-4xl font-display text-2xl font-medium tracking-tight text-gray-900 sm:text-6xl">
           {title}
@@ -45,7 +45,7 @@ export function Hero({
         ''
       )}
       {buttonText ? (
-        <div className="mt-10 flex justify-center gap-x-6">
+        <div className="mt-10 mb-5 flex justify-center gap-x-6">
           <Button color="blue">{buttonText}</Button>
         </div>
       ) : null}

@@ -100,7 +100,7 @@ export default function Home() {
         />
         <Feature textPosition="right" textData={textFeatureData1} />
         <Feature textPosition="left" textData={textFeatureData2} />
-        <Feature textPosition="right" styles={`bg-slate-50 border-solid border-2 border-slate-400`} textData={textFeatureData3} />
+        <Feature textPosition="right" styles={`pt-10 bg-slate-50 border-solid border-2 border-slate-400`} textData={textFeatureData3} />
         <Hero
           title="This Is How Your Product Can Fix All Of The Problems"
           headline="We don't want to explain the entire product because that overwhelms people and raises unnecessary objections. Instead, show them how they can use your product to get the result they want (this is all they care about anyway)"
@@ -112,7 +112,7 @@ export default function Home() {
         <Feature textPosition="right" textData={textFeatureData6} />
         <HeroExpanded />
         <HeroCompaniesExpanded />
-        <Feature textPosition="left" textData={textFeatureData7} styles={`bg-slate-50 border-solid border-2 border-slate-400`}/>
+        <Feature textPosition="left" textData={textFeatureData7} styles={`pt-8 bg-slate-50 border-solid border-2 border-slate-400`}/>
       </main>
     </>
   )
